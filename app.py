@@ -17,7 +17,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-os.environ['HUGGINGFACEHUB_API_TOKEN'] = os.getenv("HUGGINGFACEHUB_API_TOKEN")
+huggingface_api_token = st.secrets["huggingface"]["api_token"]
+os.environ['HUGGINGFACEHUB_API_TOKEN'] = huggingface_api_token
 embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 
 ## set up Streamlit
