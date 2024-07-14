@@ -1,0 +1,12 @@
+langchain
+PyPDF2
+python-dotenv
+streamlit
+openai
+langchain-chains
+langchain-chroma
+langchain-community
+langchain-core
+langchain-groq
+langchain-huggingface
+langchain-text_splitters
